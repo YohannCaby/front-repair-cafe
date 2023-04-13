@@ -5,6 +5,7 @@
       <v-container>
         <router-view></router-view>
       </v-container>
+      <CustomSnack></CustomSnack>
     </v-main>
     <v-footer app>
 
@@ -13,10 +14,11 @@
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue';
-
+import CustomSnack from '@/components/CustomSnack.vue'
 export default {
   components : {
-    NavBar
+    NavBar,
+    CustomSnack
   }
 
 }
