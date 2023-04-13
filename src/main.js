@@ -9,6 +9,9 @@ import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css'
 // Pinia
 import { createPinia } from 'pinia'
+//VueDatePicker
+import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css'
 
 const vuetify = createVuetify({
   theme: {
@@ -18,6 +21,7 @@ const vuetify = createVuetify({
   directives,
 })
 
-const pinia = createPinia()
-const vueApp = createApp(App).use(router).use(vuetify).use(pinia);
+const pinia = createPinia();
+const vueApp = createApp(App).use(pinia).use(vuetify).use(router);
+vueApp.component('VueDatePicker',VueDatePicker);
 vueApp.mount('#app');
