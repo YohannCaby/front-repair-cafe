@@ -22,7 +22,7 @@
         </v-card>
         <v-divider></v-divider>
         <v-card class="pa-2 ma-2" variant="outlined">
-            <v-card-title>Ancienne(s) adhesion(s)</v-card-title>
+            <v-card-title>Ancienne adhesion</v-card-title>
             <v-card-item v-for="adhesion in oldOtherSortedAdhesions" :key="adhesion.date">
                 <v-card-text>Date adhésion : {{ adhesion.date.toLocaleDateString("fr-fr") }}</v-card-text>
                 <v-card-text v-if="adhesion.commentaire">Commentaire : {{ adhesion.commentaire }}</v-card-text>
