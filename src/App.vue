@@ -7,21 +7,18 @@
       </v-container>
       <CustomSnack></CustomSnack>
     </v-main>
-    <v-footer app>
-
-    </v-footer>
+    <v-footer app> </v-footer>
   </v-app>
 </template>
 <script>
-import NavBar from '@/components/NavBar.vue';
-import CustomSnack from '@/components/CustomSnack.vue'
+import NavBar from "@/components/NavBar.vue";
+import CustomSnack from "@/components/CustomSnack.vue";
 export default {
-  components : {
+  components: {
     NavBar,
-    CustomSnack
-  }
-
-}
+    CustomSnack,
+  },
+};
 </script>
 <style>
 #app {
