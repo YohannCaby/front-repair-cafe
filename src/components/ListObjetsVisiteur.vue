@@ -13,6 +13,7 @@
           :key="objet.id"
           size="medium"
           dot-color="orange-lighten-2"
+          :width="getOptimumWidth"
         >
           <ObjetSheet :objet="objet" @modify="gotoObjet($event)"></ObjetSheet>
         </v-timeline-item>
@@ -42,6 +43,13 @@ export default {
       isLoaded: false,
       ctxVisiteur: useContexteVisiteurStore(),
     };
+  },
+  computed: {
+    getOptimumWidth() {
+      let width = (window.innerWidth / 3) * 0.7;
+      console.log(width);
+      return width;
+    },
   },
   methods: {
     getObjets() {

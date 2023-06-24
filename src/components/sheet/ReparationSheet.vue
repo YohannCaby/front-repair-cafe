@@ -1,8 +1,8 @@
 <template>
   <v-sheet border="mb" elevation="12" rounded="lg" witdh="100%">
     <v-container>
-      <v-row class="rounded-lg bg-orange-lighten-2">
-        <v-col cols="8">
+      <v-row class="rounded-lg bg-orange-lighten-2" align="center">
+        <v-col cols="9">
           <p class="mx-auto" text="text-left">
             {{ reparation.date.toLocaleDateString("fr-fr") }} -
             <strong
@@ -11,9 +11,7 @@
             >
           </p>
         </v-col>
-        <v-col cols="2" offset="2"
-          ><v-btn icon="mdi-pencil" variant="text"></v-btn
-        ></v-col>
+        <v-col><v-btn icon="mdi-pencil" variant="text"></v-btn></v-col>
       </v-row>
       <v-row>
         <v-col>

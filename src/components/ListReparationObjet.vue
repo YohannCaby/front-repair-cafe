@@ -14,6 +14,7 @@
             :key="reparation.id"
             size="medium"
             dot-color="orange-lighten-2"
+            :width="getOptimumWidth"
           >
             <ReparationSheet :reparation="reparation"></ReparationSheet>
           </v-timeline-item>
@@ -44,6 +45,13 @@ export default {
       reparations: [new Reparation()],
       isLoaded: false,
     };
+  },
+  computed: {
+    getOptimumWidth() {
+      let width = (window.innerWidth / 2) * 0.7;
+      console.log(width);
+      return width;
+    },
   },
   methods: {
     getListReparation() {

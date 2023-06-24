@@ -1,14 +1,14 @@
 <template>
-  <v-sheet border="mb" elevation="12" rounded="lg" witdh="100%">
-    <v-container class="d-flex">
-      <v-row class="no-gutters rounded-lg bg-orange-lighten-2">
-        <v-col cols="8" class="me-auto">
+  <v-sheet border="mb" rounded="lg">
+    <v-container>
+      <v-row class="rounded-lg bg-orange-lighten-2" align="center">
+        <v-col cols="9" class="me-auto">
           <p class="mx-auto" text="text-left">
             {{ objet.date_creation.toLocaleDateString("fr-fr") }} -
             <strong>{{ objet.nom }}</strong>
           </p>
         </v-col>
-        <v-col cols="4"
+        <v-col
           ><v-btn icon="mdi-pencil" variant="text" @click="modify"></v-btn
         ></v-col>
       </v-row>

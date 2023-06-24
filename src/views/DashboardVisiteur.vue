@@ -1,6 +1,6 @@
 <template>
   <div v-if="ctxVisiteur.currentVisiteur !== null">
-    <v-card variant="outlined">
+    <v-container variant="outlined">
       <div class="float-left pa-2 ma-2">
         <v-btn
           color="primary"
@@ -10,10 +10,10 @@
         >
       </div>
       <br />
-      <v-card-title
-        >{{ ctxVisiteur.currentVisiteur.nom }}
-        {{ ctxVisiteur.currentVisiteur.prenom }}</v-card-title
-      >
+      <h2>
+        {{ ctxVisiteur.currentVisiteur.nom }}
+        {{ ctxVisiteur.currentVisiteur.prenom }}
+      </h2>
       <br />
       <v-row>
         <v-col cols="4">
@@ -53,7 +53,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-card>
+    </v-container>
   </div>
 </template>
 <script>
